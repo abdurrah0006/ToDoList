@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimalist To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+    <span class="mode-icon">☀️</span>
+  </button>
+
+  <main class="todo-container">
+    <h1>My Tasks</h1>
+    
+    <div class="todo-input-row">
+      <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off" />
+      <button id="add-task-btn" class="btn btn-primary">Add</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div class="filters-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>by Abdur Rahman</p>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
